@@ -1,8 +1,33 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
+import lodash from "lodash";
+var cats = [
+  "people",
+  "nature",
+  "food",
+  "infrastructure",
+  "animals",
+  "galaxy",
+  "sky",
+  "landscape",
+  "architecture",
+  "travel",
+  "art",
+  "flower",
+  "scene",
+  "galaxy",
+  "fireworks",
+  "flower",
+];
+function randomImage() {
+  var cat1 = lodash.sample(cats);
+  var cat2 = lodash.sample(cats);
+  console.log(cat1, cat2);
+  return `https://source.unsplash.com/1080x1350/?${cat1},${cat2}`;
+}
 export default function Card(props) {
   var item = props.item;
-  var img = item.coverImg;
+  var img = randomImage();
   var rating = item.stats.rating;
   var ratingsno = item.stats.reviewCount;
   var country = item.location;
