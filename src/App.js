@@ -11,6 +11,12 @@ function App() {
       <section>
         <div className="cards-list">{cards}</div>
       </section>
+      <section>
+        <div className="cards-list">{cards}</div>
+      </section>
+      <section>
+        <div className="cards-list">{cards}</div>
+      </section>
     </div>
   );
 }

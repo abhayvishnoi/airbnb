@@ -1,3 +1,28 @@
+import lodash from "lodash";
+var cats = [
+  "people",
+  "nature",
+  "food",
+  "infrastructure",
+  "animals",
+  "galaxy",
+  "sky",
+  "landscape",
+  "architecture",
+  "travel",
+  "art",
+  "flower",
+  "scene",
+  "galaxy",
+  "fireworks",
+  "flower",
+];
+function randomImage() {
+  var cat1 = lodash.sample(cats);
+  var cat2 = lodash.sample(cats);
+  console.log(cat1, cat2);
+  return `https://source.unsplash.com/1080x1350/?${cat1},${cat2}`;
+}
 const data = [
   {
     id: 1,
@@ -5,7 +30,7 @@ const data = [
     description:
       'I will share with you what I call "Positively Impactful Moments of Disappointment." Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.',
     price: 136,
-    coverImg: "https://source.unsplash.com/1080x1350/?people",
+    coverImg: randomImage(),
     stats: {
       rating: 5.0,
       reviewCount: 6,
@@ -19,7 +44,7 @@ const data = [
     description:
       "Interested in becoming a wedding photographer? For beginner and experienced photographers alike, join us in learning techniques required to leave the happy couple with memories that'll last a lifetime.",
     price: 125,
-    coverImg: "https://source.unsplash.com/1080x1350/?landscape",
+    coverImg: randomImage(),
     stats: {
       rating: 5.0,
       reviewCount: 30,
@@ -33,7 +58,7 @@ const data = [
     description:
       "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
     price: 50,
-    coverImg: "https://source.unsplash.com/1080x1350/?animal",
+    coverImg: randomImage(),
     stats: {
       rating: 4.8,
       reviewCount: 2,
@@ -47,7 +72,7 @@ const data = [
     description:
       "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
     price: 50,
-    coverImg: "https://source.unsplash.com/1080x1350/?galaxy",
+    coverImg: randomImage(),
     stats: {
       rating: 4.8,
       reviewCount: 2,
@@ -61,7 +86,7 @@ const data = [
     description:
       "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
     price: 50,
-    coverImg: "https://source.unsplash.com/1080x1350/?sky",
+    coverImg: randomImage(),
     stats: {
       rating: 4.8,
       reviewCount: 2,
@@ -75,7 +100,7 @@ const data = [
     description:
       "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
     price: 50,
-    coverImg: "https://source.unsplash.com/1080x1350/?flower",
+    coverImg: randomImage(),
     stats: {
       rating: 4.8,
       reviewCount: 2,
@@ -89,7 +114,7 @@ const data = [
     description:
       "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
     price: 50,
-    coverImg: "https://source.unsplash.com/1080x1350/?fireworks",
+    coverImg: randomImage(),
     stats: {
       rating: 4.8,
       reviewCount: 2,

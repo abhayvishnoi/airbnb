@@ -38,6 +38,18 @@ section {
   gap: 20px;
   overflow-x: auto;
 }
+.cards-list::-webkit-scrollbar {
+  height: 5px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  background: rgb(143, 143, 143);
+  border-radius: 20px;
+  /* height: 14px; */
+  width: 1px;
+}
+::-webkit-scrollbar-track:horizontal {
+  background: rgb(187, 186, 186);
+}
 .card {
   width: 175px;
   font-size: 12px;
