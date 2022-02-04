@@ -22,7 +22,7 @@ var cats = [
 function randomImage() {
   var cat1 = lodash.sample(cats);
   var cat2 = lodash.sample(cats);
-  console.log(cat1, cat2);
+  // console.log(cat1, cat2);
   return `https://source.unsplash.com/1080x1350/?${cat1},${cat2}`;
 }
 export default function Card(props) {
