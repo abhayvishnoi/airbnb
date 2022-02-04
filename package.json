@@ -2,7 +2,8 @@
   "name": "airbnb",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://abhayvishnoi.github.io/airbnb/",
+  "homepage": ".",
+  "start_url": "/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
